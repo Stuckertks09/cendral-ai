@@ -149,4 +149,4 @@ In progress: Studio UI (scenario builder, side-by-side run comparison, analytics
 
 ## License
 
-ISC
+MIT
