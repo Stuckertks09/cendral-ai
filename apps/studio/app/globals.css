@@ -1,0 +1,153 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* --- Persona Studio typography + layout helpers --- */
+
+.section-header {
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #9ca3af; /* slate-400 */
+  border-bottom: 1px solid rgba(75, 85, 99, 0.4);
+}
+
+.subsection-header {
+  font-weight: 600;
+  font-size: 12px;
+  color: #4b5563; /* slate-600 */
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.field-label {
+  font-weight: 400;
+  font-size: 12px;
+  color: #6b7280; /* slate-500 */
+}
+
+.field-value {
+  font-weight: 500;
+  font-size: 13px;
+  color: #111827; /* slate-900 */
+}
+
+.field-value-empty {
+  font-style: italic;
+  font-size: 12px;
+  color: #9ca3af; /* slate-400 */
+}
+
+.range-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+}
+
+/* Track */
+.range-slider::-webkit-slider-runnable-track {
+  height: 4px;
+  border-radius: 999px;
+  background: #374151; /* gray-700 */
+}
+
+.range-active::-webkit-slider-runnable-track {
+  background: #10b981; /* emerald */
+}
+
+/* Thumb */
+.range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 12px;
+  width: 12px;
+  border-radius: 999px;
+  background: #9ca3af; /* gray-400 */
+  margin-top: -4px;
+}
+
+.range-active::-webkit-slider-thumb {
+  background: #10b981;
+}
+
+/* Firefox */
+.range-slider::-moz-range-track {
+  height: 4px;
+  background: #374151;
+  border-radius: 999px;
+}
+
+.range-active::-moz-range-track {
+  background: #10b981;
+}
+
+.range-slider::-moz-range-thumb {
+  height: 12px;
+  width: 12px;
+  border-radius: 999px;
+  background: #9ca3af;
+  border: none;
+}
+
+.range-active::-moz-range-thumb {
+  background: #10b981;
+}
+
+/* emphasized (action) sliders */
+.range-emphasized::-webkit-slider-runnable-track {
+  background: #10b981;
+}
+
+.range-emphasized::-webkit-slider-thumb {
+  background: #10b981;
+}
+
+/* firefox */
+.range-emphasized::-moz-range-track {
+  background: #10b981;
+}
+
+.range-emphasized::-moz-range-thumb {
+  background: #10b981;
+}
+
+/* --- neutral tuning sliders (model parameters) --- */
+
+.range-tuning::-webkit-slider-runnable-track {
+  background: #374151; /* gray-700 */
+}
+
+.range-tuning::-webkit-slider-thumb {
+  background: #9ca3af; /* gray-400 */
+}
+
+.range-tuning::-moz-range-track {
+  background: #374151;
+}
+
+.range-tuning::-moz-range-thumb {
+  background: #9ca3af;
+}
