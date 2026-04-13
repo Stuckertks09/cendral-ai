@@ -2,8 +2,6 @@
 
 **A cognitive simulation engine for modeling how geopolitical actors, organizations, and human systems think, argue, remember, and change.**
 
-Cendral is a cognitive simulation engine for modeling how actors perceive events, form beliefs, argue positions, and update shared world state.
-
 It replaces prompt-driven agent loops with:
 - deterministic cognition (rule-based belief physics)
 - schema-constrained arbitration
@@ -44,6 +42,8 @@ Repeat. Emergence follows.
 | Domain Extensions | `06-domain-extensions.md` | Nine domain packs |
 | Cognition Layer | `07-cognition-layer.md` | Rule-based persona drift with parametric sliders |
 | Event Layer | `08-event-layer.md` | Signal ingestion, normalization, OSINT pipeline |
+| Memory Layer | `09-memory-layer.md` | Three-tier fused memory: semantic (Pinecone), relational (Neo4j), episodic |
+| Prompt Packs & Config | `10-prompt-packs-config.md` | Runtime-configurable LLM prompts and reproducible scenario snapshots |
 
 **[Executive Summary →](./docs/architecture/exec-summary.md)**
 
