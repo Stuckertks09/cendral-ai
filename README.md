@@ -97,13 +97,44 @@ Nine domains implemented. Each ships with a worldstate schema, persona adapter, 
 
 ---
 
+## Example Output
+
+**Scenario:** China conducts a phased withdrawal of naval assets from the Taiwan Strait following back-channel diplomatic talks.
+
+**Event type:** Naval / signaling | **Domain:** Defense | **Theater:** Indo-Pacific
+
+The engine ran five actors through the full perception → argument → arbitration pipeline:
+
+| Actor | Position | Magnitude |
+|---|---|---|
+| United States | Decrease tension | 0.40 |
+| China | Decrease tension | 0.35 |
+| NATO | Decrease tension | 0.20 |
+| United Kingdom | Decrease tension | 0.20 |
+| Russian Federation | Decrease tension | 0.10 |
+
+**Arbitration output (Indo-Pacific theater):**
+- Stance delta: -0.38 (de-escalatory)
+- Certainty delta: +0.18 (clearer picture)
+- Volatility delta: -0.22 (reduced instability)
+
+**Global metrics:**
+- System escalation risk: -0.32
+- Alliance cohesion: +0.13
+- Deterrence balance: +0.09
+
+Each actor's argument was grounded in doctrine — China's rationale reflected "assertive signaling followed by tactical restraint when facing credible deterrence," while the US position emphasized stability and allied confidence. The arbitration engine weighted and merged these into bounded numeric deltas without hallucinating new state variables.
+
 ## Getting Started
 
 **Prerequisites:** Node.js 18+, MongoDB, Neo4j, Pinecone, OpenAI API key
 
+## Backend
+
 ```bash
 git clone https://github.com/Stuckertks09/cendral-ai.git
 cd cendral-ai
+cd services
 npm install
 cp .env.example .env
 # Configure credentials in .env
@@ -149,4 +180,5 @@ In progress: Studio UI (scenario builder, side-by-side run comparison, analytics
 
 ## License
 
-MIT
+ISC
+
