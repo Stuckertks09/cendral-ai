@@ -1,5 +1,5 @@
 {
-  "name": "agent-platform",
+  "name": "cendral-ai",
   "version": "1.0.0",
   "scripts": {
     "start": "node services/sim-engine/src/server.js",
