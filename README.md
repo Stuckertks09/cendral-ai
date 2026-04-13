@@ -2,7 +2,14 @@
 
 **A cognitive simulation engine for modeling how geopolitical actors, organizations, and human systems think, argue, remember, and change.**
 
-Cendral is not a chatbot wrapper or a prompt chain. It is a purpose-built engine with explicit architecture for multi-agent cognition, rule-based belief physics, schema-driven arbitration, and a three-tier memory system spanning vector similarity, graph relationships, and episodic history.
+Cendral is a cognitive simulation engine for modeling how actors perceive events, form beliefs, argue positions, and update shared world state.
+
+It replaces prompt-driven agent loops with:
+- deterministic cognition (rule-based belief physics)
+- schema-constrained arbitration
+- fused semantic, relational, and episodic memory
+
+The result is a structured, reproducible simulation of how systems think and evolve under pressure.
 
 Feed it a real-world event — a border incident, a policy shift, a market shock, a tweet. It produces a structured, reproducible simulation of how actors perceive the event, argue their positions, update the world, and carry the consequences forward.
 
